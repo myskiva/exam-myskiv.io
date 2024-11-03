@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Онлайн-калькулятор</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="calculator">
+    <h2>Онлайн-калькулятор</h2>
+    <input type="text" id="expression" placeholder="Введіть вираз, наприклад: sin(45) + sqrt(16)">
+    
+    <div class="buttons">
+        <button onclick="appendSymbol('+')">+</button>
+        <button onclick="appendSymbol('-')">-</button>
+        <button onclick="appendSymbol('*')">×</button>
+        <button onclick="appendSymbol('/')">÷</button>
+        <button onclick="appendSymbol('(')">(</button>
+        <button onclick="appendSymbol(')')">)</button>
+        <button onclick="clearInput()">C</button>
+        <button onclick="calculate()">=</button>
+    </div>
+
+    <div class="special-functions">
+        <button onclick="appendSymbol('sqrt(')">√</button>
+        <button onclick="appendSymbol('log(')">ln</button>
+        <button onclick="appendSymbol('log10(')">log</button>
+        <button onclick="appendSymbol('sin(')">sin</button>
+        <button onclick="appendSymbol('cos(')">cos</button>
+        <button onclick="appendSymbol('tan(')">tan</button>
+    </div>
+    
+    <div id="result"></div>
+</div>
+
+<footer>Created by Arsen MYSKIV</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,2 +1,2 @@
 # exam-myskiv.io
-Exam by MyskivArsen, Variant №3
+Exam by Myskiv Arsen, Variant №3
